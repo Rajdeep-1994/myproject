@@ -1,0 +1,104 @@
+.tree-structure {
+    width: 600px;
+    margin: auto;
+}
+
+.tree-structure .profile {
+    text-align: center;
+    width: 300px;
+    margin: 10px auto;
+    border: 1px solid #030303;
+    background-color: blue;
+}
+
+.tree-structure .profile h3 {
+    color: aliceblue;
+    margin: 10px;
+    position: relative;
+}
+
+.tree-structure .profile h3::after {
+    position: absolute;
+    width: 1px;
+    height: 11px;
+    background-color: #030303;
+    content: "";
+    right: 0;
+    left: 0;
+    bottom: -21px;
+    margin: auto;
+}
+
+
+/* profile end */
+
+.tree-structure .structure .object-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    border-top: 1px solid #030303;
+}
+
+.tree-structure .structure .object-list .list-1,
+.tree-structure .structure .object-list .list-2,
+.tree-structure .structure .object-list .list-3 {
+    margin: 10px 50px;
+    /* color: aliceblue; */
+    background-color: blue;
+    /* padding: 10px 20px; */
+    position: relative;
+}
+
+.tree-structure .structure .object-list .list-1::before,
+.tree-structure .structure .object-list .list-2::before,
+.tree-structure .structure .object-list .list-3::before {
+    position: absolute;
+    width: 1px;
+    height: 11px;
+    background-color: #030303;
+    content: "";
+    right: 0;
+    left: 0;
+    top: -11px;
+    margin: auto;
+}
+
+
+/* ibject list 1 end */
+
+.tree-structure .structure .sub-object {
+    list-style: None;
+    margin: 10px 0 0 25px;
+    padding-left: 20px;
+    border-left: 1px solid #030303;
+}
+
+.tree-structure .structure .sub-object .sub-list-1,
+.tree-structure .structure .sub-object .sub-list-2,
+.tree-structure .structure .sub-object .sub-list-3 {
+    text-align: right;
+    color: aliceblue;
+    background-color: cornflowerblue;
+    position: relative;
+    padding: 10px;
+}
+
+.tree-structure .structure .sub-object .sub-list-1,
+.tree-structure .structure .sub-object .sub-list-2 {
+    margin-bottom: 10px;
+}
+
+.tree-structure .structure .sub-object .sub-list-1::after,
+.tree-structure .structure .sub-object .sub-list-2::after,
+.tree-structure .structure .sub-object .sub-list-3::after {
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: #030303;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: -20px;
+    margin: auto;
+}
